@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20305</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{856CE102-48A3-4DA0-B5AD-2DB2C232D1C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StaDynLanguage</RootNamespace>
+    <AssemblyName>StaDynLanguage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DeployExtension>False</DeployExtension>
+    <CreateVsixContainer>False</CreateVsixContainer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="antlr.astframe, Version=2.7.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\antlr.astframe.dll</HintPath>
+    </Reference>
+    <Reference Include="antlr.runtime, Version=2.7.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\antlr.runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PublicAssemblies\EnvDTE.dll</HintPath>
+    </Reference>
+    <Reference Include="EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="microsoft.msxml, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.ComponentModelHost, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.CoreUtility">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Editor, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Language.Intellisense, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Text.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.Logic">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.UI">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.UI.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BraceMatching\BraceMatchingTagger.cs" />
+    <Compile Include="BraceMatching\BraceMatchingTaggerProvider.cs" />
+    <Compile Include="Colors\StaDynLanguageFormat.cs" />
+    <Compile Include="Errors\ErrorPresenter.cs" />
+    <Compile Include="Errors\StaDynErrorList.cs" />
+    <Compile Include="Errors\ErrorListFactory.cs" />
+    <Compile Include="Errors\SquiggleErrorPresenter.cs" />
+    <Compile Include="Errors\StaDynErrorListProvider.cs" />
+    <Compile Include="Errors\ValidationError.cs" />
+    <Compile Include="Intellisense\Completion\CompletionComparer.cs" />
+    <Compile Include="Intellisense\Completion\CompletionGlyph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Intellisense\Completion\StaDynCompletionController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Intellisense\Completion\StaDynCompletionSource.cs" />
+    <Compile Include="Intellisense\QuickInfo\StaDynQuickInfoSource.cs" />
+    <Compile Include="Intellisense\QuickInfo\QuickInfoController.cs" />
+    <Compile Include="Intellisense\QuickInfo\QuickInfoControllerProvider.cs" />
+    <Compile Include="Intellisense\Signature\StaDynSignatureHelpCommand.cs" />
+    <Compile Include="Intellisense\Signature\StaDynSignatureHelpController.cs" />
+    <Compile Include="Intellisense\Signature\StaDynSignatureHelpSource.cs" />
+    <Compile Include="Intellisense\Signature\StaDynSignatureHelpSourceProvider.cs" />
+    <Compile Include="Intellisense\StaDynIntellisenseHelper.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StaDynAST\DecorateAST.cs" />
+    <Compile Include="StaDynAST\GetVariableNameOperation.cs" />
+    <Compile Include="StaDynAST\ProjectFileAST.cs" />
+    <Compile Include="StaDynAST\StaDynSourceFileAST.cs" />
+    <Compile Include="StaDynDynamic\StaDynDynamicHelper.cs" />
+    <Compile Include="StaDynLexer\StaDynTokenClassification.cs" />
+    <Compile Include="StaDynLanguage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaDynLexer\StaDynLexer.cs" />
+    <Compile Include="StaDynLexer\Tagging\StaDynTagClassifier.cs" />
+    <Compile Include="StaDynLexer\Tagging\StaDynTokenTag.cs" />
+    <Compile Include="StaDynLexer\StaDynTokenType.cs" />
+    <Compile Include="StaDynLexer\StaDynTokenResolver.cs" />
+    <Compile Include="StaDynParser\ParserLauncher.cs" />
+    <Compile Include="StaDynParser\ParserLauncherProvider.cs" />
+    <Compile Include="StaDynParser\StaDynParser.cs" />
+    <Compile Include="TypeSystem\GetNodeTypeOperation.cs" />
+    <Compile Include="TypeSystem\GetTypeSystemName.cs" />
+    <Compile Include="TypeSystem\StaDynTypeTable\StaDynTypeTableFunctions.cs" />
+    <Compile Include="TypeSystem\TypeSystemHelper.cs" />
+    <Compile Include="Utils\FileUtilities.cs" />
+    <Compile Include="Utils\ITokenToLocation.cs" />
+    <Compile Include="Utils\LocationComparer.cs" />
+    <Compile Include="Utils\SourceHelper.cs" />
+    <Compile Include="Utils\VSEventHandler.cs" />
+    <Compile Include="Visitors\VisitorDeclareEverythingExplicit.cs" />
+    <Compile Include="Visitors\VisitorDynamicFileGenerator.cs" />
+    <Compile Include="Visitors\VisitorFindArray.cs" />
+    <Compile Include="Visitors\VisitorFindCallMethod.cs" />
+    <Compile Include="Visitors\VisitorFindCast.cs" />
+    <Compile Include="Visitors\VisitorFindNode.cs" />
+    <Compile Include="Visitors\VisitorFindDefinitionsInScope.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source.extension.vsixmanifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StaDynLanguage.Project\StaDynLanguage.Project.csproj">
+      <Project>{CC3FFA62-855B-4DCE-B56B-0445F078FEB4}</Project>
+      <Name>StaDynLanguage.Project</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\trunk\Inference\Inference.csproj">
+      <Project>{6AB60528-1ADA-4E5C-8F4E-802F0CA11C3C}</Project>
+      <Name>Inference</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\completionset.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BigIcon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SmallIcon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\VSSDK\Microsoft.VsSDK.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

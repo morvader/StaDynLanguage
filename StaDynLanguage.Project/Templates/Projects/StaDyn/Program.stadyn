@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace $nameSpace$
+{
+	///<summary>
+	///Description of class goes here.
+	///</summary>	
+	public class $className$
+	{
+        /// <summary>
+        /// Application entry point.
+        /// </summary>
+        /// <param name="args">Application arguments.</param>
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Hello StaDyn!");
+			Console.ReadKey();
+		}
+	}
+}

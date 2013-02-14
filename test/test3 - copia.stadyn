@@ -1,0 +1,42 @@
+/* Sample application  to tests tokens */
+
+using System;
+//using Prueba;
+
+namespace Prueba {
+	
+    public class Hello {
+        // One line comment
+		string a1;
+		public int ret;
+        public static void Main(String[] args) {
+           string a2;
+		}
+		public int suma(int a,int b){
+			return a+b;
+		}
+		
+		private void resta(){
+			int z,y;
+		}
+	}
+	
+	public class GoodBye {
+		public int a;
+		protected char c;
+		
+		protected void leer(){
+			Hello hola;
+			hola;
+		}
+	}
+}
+
+namespace Prueba2{
+	class Hola{
+		int hola;
+		string adios;
+		Hello d;
+		string2 z;
+	}
+}

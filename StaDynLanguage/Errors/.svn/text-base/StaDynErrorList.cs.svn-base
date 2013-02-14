@@ -1,0 +1,85 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Text;
+using ErrorManagement;
+
+namespace StaDynLanguage.Errors
+{
+    internal class StaDynErrorList
+    {
+        //Implements singleton
+        private List<ValidationError> errorList = new List<ValidationError>();
+        static StaDynErrorList instance = null;
+
+        private StaDynErrorList()
+        {
+        }
+
+        public static StaDynErrorList Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new StaDynErrorList();
+                }
+                return instance;
+            }
+        }
+        public void addError(
+             ValidationErrorSeverity severity,
+             ValidationErrorType errorType,
+             string text,
+             Span span)
+        {
+            ValidationError error = new ValidationError(span, text, severity, errorType);
+
+            this.errorList.Add(error);
+        }
+
+        public int errorCount()
+        {
+            return this.errorList.Count;
+        }
+        public List<ValidationError> GetErrors()
+        {
+            return this.errorList;
+        }
+        public void clearErrors()
+        {
+            this.errorList.Clear();
+        }
+        public bool checkErrors(ITextBuffer source)
+        {
+
+            int errorCount = ErrorManager.Instance.ErrorCount;
+
+            if (errorCount > 0)
+            {
+                IError errorFound = null;
+                Span errorSpan;
+                int errorPosition = 0, errorLineNumber;
+                for (int i = 0; i < errorCount; i++)
+                {
+                    errorFound = ErrorManager.Instance.GetError(i);
+                    if (errorFound is ErrorAdapter)
+                    {
+                        ErrorAdapter error = (ErrorAdapter)errorFound;
+
+                        errorLineNumber = error.Location.Line > 0 ? error.Location.Line - 1 : 0;
+                        errorPosition = source.CurrentSnapshot.GetLineFromLineNumber(errorLineNumber).Start.Position + error.Location.Column;
+                        errorSpan = new Span(errorPosition, 3);
+                        this.addError(ValidationErrorSeverity.Error, ValidationErrorType.Semantic, error.Description, errorSpan);
+                    }
+                    else
+                        this.addError(ValidationErrorSeverity.Error, ValidationErrorType.Semantic, "Parse Error", new Span(0, 3));
+                }
+                return true;
+            }
+            return false;
+        }
+    }
+}

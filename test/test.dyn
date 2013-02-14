@@ -1,0 +1,14 @@
+<application name="test">
+  <namespace name="Prueba">
+    <class name="pruebaFiguras">
+      <method name="Main">
+        <dynvar name="abcd" />
+        <dynvar name="res" />
+      </method>
+      <method name="Prueba.pruebaFiguras.Main">
+        <dynvar name="abcd" />
+        <dynvar name="figura" />
+      </method>
+    </class>
+  </namespace>
+</application>

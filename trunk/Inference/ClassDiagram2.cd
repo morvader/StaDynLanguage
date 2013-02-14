@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AST.ArgumentExpression" Collapsed="true">
+    <Position X="45.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAhAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\ArgumentExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.WhileStatement" Collapsed="true">
+    <Position X="20.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAIAgAACAAACAAAAAgAAAAAAABACAACAAgAAAAgA=</HashCode>
+      <FileName>src\AST\WhileStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.ArithmeticExpression" Collapsed="true">
+    <Position X="68" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAIAAAAIAA=</HashCode>
+      <FileName>src\AST\ArithmeticExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.ArrayAccessExpression" Collapsed="true">
+    <Position X="72.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAIAA=</HashCode>
+      <FileName>src\AST\ArrayAccessExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.AssertStatement" Collapsed="true">
+    <Position X="41" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAIAAAACAAAAAAAgAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\AssertStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.AssignmentExpression" Collapsed="true">
+    <Position X="79.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAIAAAAIAA=</HashCode>
+      <FileName>src\AST\AssignmentExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.AstNode" Collapsed="true">
+    <Position X="60.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAAAAAAAAAAAAAAgAIAAAACAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\AstNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.BaseCallExpression" Collapsed="true">
+    <Position X="53.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAAAAABAAAAAAAAAAAAAAAAAAggAAAIIAAAAAAAAAE=</HashCode>
+      <FileName>src\AST\BaseCallExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.BaseExpression" Collapsed="true">
+    <Position X="61.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\BaseExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.BinaryExpression" Collapsed="true">
+    <Position X="73.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAIAgAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\BinaryExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.BitwiseExpression" Collapsed="true">
+    <Position X="74.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAIAAAAIAA=</HashCode>
+      <FileName>src\AST\BitwiseExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.Block" Collapsed="true">
+    <Position X="43.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAAAAAAAAAABAAAAEgAACAAIAAAAAABAAAAA=</HashCode>
+      <FileName>src\AST\Block.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.BoolLiteralExpression" Collapsed="true">
+    <Position X="95" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>src\AST\BoolLiteralExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.BreakStatement" Collapsed="true">
+    <Position X="115.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\BreakStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.CastExpression" Collapsed="true">
+    <Position X="47.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAIABABAAAQAAAAAAAACgA=</HashCode>
+      <FileName>src\AST\CastExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.CatchStatement" Collapsed="true">
+    <Position X="23" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAEAAAABEAAAABAAAAAAAA=</HashCode>
+      <FileName>src\AST\CatchStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.CharLiteralExpression" Collapsed="true">
+    <Position X="63.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>src\AST\CharLiteralExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.ClassDefinition" Collapsed="true">
+    <Position X="14" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\ClassDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.CompoundExpression" Collapsed="true">
+    <Position X="83.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAACAAAIAIAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>src\AST\CompoundExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.ConstantDefinition" Collapsed="true">
+    <Position X="7.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\ConstantDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.ConstantFieldDefinition" Collapsed="true">
+    <Position X="20.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\ConstantFieldDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.ConstructorDefinition" Collapsed="true">
+    <Position X="12.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAA=</HashCode>
+      <FileName>src\AST\ConstructorDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.ContinueStatement" Collapsed="true">
+    <Position X="117.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\ContinueStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.Declaration" Collapsed="true">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAACAAAAAAAAIAAAACAAAACAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\Declaration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.DeclarationSet">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>src\AST\DeclarationSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.Definition" Collapsed="true">
+    <Position X="7.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAIACAAAAAAA=</HashCode>
+      <FileName>src\AST\Definition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.DoStatement" Collapsed="true">
+    <Position X="29.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAAAIAAAACAAAARAAAAAAAAAAAABAAQAAAAAAgAAAA=</HashCode>
+      <FileName>src\AST\DoStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.DoubleLiteralExpression" Collapsed="true">
+    <Position X="86" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAACAEAAAABAAAAAAAA=</HashCode>
+      <FileName>src\AST\DoubleLiteralExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.ExceptionManagementStatement" Collapsed="true">
+    <Position X="36.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAAIAAAACAQAgAAAAAAAEAAAAAAAACAAAAAA=</HashCode>
+      <FileName>src\AST\ExceptionManagementStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.Expression" Collapsed="true">
+    <Position X="73.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAIAAAACAAAAAICAAABAAAAAAAAoAAAAKA=</HashCode>
+      <FileName>src\AST\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.FieldAccessExpression" Collapsed="true">
+    <Position X="97.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CICEAAAAAAAAAAAAAAIEAAAAABCAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\FieldAccessExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.FieldDeclaration">
+    <Position X="18.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMAIAAAAAAAAQAAAAAAAAAAAEAQAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\FieldDeclaration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.FieldDeclarationSet">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>src\AST\FieldDeclarationSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.FieldDefinition" Collapsed="true">
+    <Position X="20.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIACAAAAAAA=</HashCode>
+      <FileName>src\AST\FieldDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.ForeachStatement" Collapsed="true">
+    <Position X="27.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAIAAAAAABAAAAgQAAAIAAAABAA=</HashCode>
+      <FileName>src\AST\ForeachStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.ForStatement" Collapsed="true">
+    <Position X="32" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAIAgAADgAACAAAAAgAAQAAiIRAAAgCgEACAEAAA=</HashCode>
+      <FileName>src\AST\ForStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.IdDeclaration" Collapsed="true">
+    <Position X="13" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAIAAAAAAAAAAAAAAAAgAAAAAAAAABgAAAAQAAACAA=</HashCode>
+      <FileName>src\AST\IdDeclaration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.IdentifierExpression" Collapsed="true">
+    <Position X="89.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAgA=</HashCode>
+      <FileName>src\AST\IdentifierExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.IfElseStatement" Collapsed="true">
+    <Position X="104" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAIABAACAAQCAEAAAwBgAiAAAAIABAAAAAQAAAAA=</HashCode>
+      <FileName>src\AST\IfElseStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.InterfaceDefinition" Collapsed="true">
+    <Position X="16.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\InterfaceDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.IntLiteralExpression" Collapsed="true">
+    <Position X="99.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAABAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\IntLiteralExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.InvocationExpression" Collapsed="true">
+    <Position X="52.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAAAAAAAAAAAAAAAAIAAAAAAAAAAABAAAAAQAAAAAA=</HashCode>
+      <FileName>src\AST\InvocationExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.IsExpression" Collapsed="true">
+    <Position X="56.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAACAAAAAAAAAAAAAAAAAAAAAABAAAwAAAAIAgAAAA=</HashCode>
+      <FileName>src\AST\IsExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.LogicalExpression" Collapsed="true">
+    <Position X="70.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAIAAAAIAA=</HashCode>
+      <FileName>src\AST\LogicalExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.MethodDeclaration">
+    <Position X="11.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIAAAAAAAAAARAAAAAAAAAAAAAABRAAEAAAABIAAAAA=</HashCode>
+      <FileName>src\AST\MethodDeclaration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.MethodDefinition" Collapsed="true">
+    <Position X="14" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAQAAAAEAAAAAAABAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\MethodDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.MoveStatement" Collapsed="true">
+    <Position X="106.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAABAAAAAQAAAAAAAAAAAgACAAAAAIAAAACAAAAAAA=</HashCode>
+      <FileName>src\AST\MoveStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.Namespace" Collapsed="true">
+    <Position X="119.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAQCg=</HashCode>
+      <FileName>src\AST\Namespace.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.NewArrayExpression" Collapsed="true">
+    <Position X="101.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIABAAAAAQAAgAAAAIAQAAAAEAAAAAJAAAACQAAAAAA=</HashCode>
+      <FileName>src\AST\NewArrayExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.NewExpression" Collapsed="true">
+    <Position X="54.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAAAAAAAAAAAAAAAAIQAAAAEAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>src\AST\NewExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.NullExpression" Collapsed="true">
+    <Position X="59" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\NullExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.PropertyDefinition">
+    <Position X="9.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABEAAAAQ=</HashCode>
+      <FileName>src\AST\PropertyDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.QualifiedIdentifierExpression" Collapsed="true">
+    <Position X="90.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAgAAAAIAAIAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\QualifiedIdentifierExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.RelationalExpression" Collapsed="true">
+    <Position X="77" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAIAAAAIAA=</HashCode>
+      <FileName>src\AST\RelationalExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.ReturnStatement" Collapsed="true">
+    <Position X="110.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAACAAAAAAAAAAAAAAABAAAAAAAAAAAAAAIAEAACAg=</HashCode>
+      <FileName>src\AST\ReturnStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.SingleIdentifierExpression" Collapsed="true">
+    <Position X="88.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIEIAAAABABAAAQAkAIAgBAAAAAAAICAAAAAACAAAAA=</HashCode>
+      <FileName>src\AST\SingleIdentifierExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.SourceFile" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBAAAAAAAAAAABBAAAAAAQAAAgAAAggAQAYAAAAQAA=</HashCode>
+      <FileName>src\AST\SourceFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.Statement" Collapsed="true">
+    <Position X="60.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\Statement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.StringLiteralExpression" Collapsed="true">
+    <Position X="81.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\StringLiteralExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.SwitchLabel" Collapsed="true">
+    <Position X="38.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIAAIAAAACAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\SwitchLabel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.SwitchSection" Collapsed="true">
+    <Position X="108.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAQAAAAEgAAAAAAAAgAAAAAAAAAAAAJAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\SwitchSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.SwitchStatement" Collapsed="true">
+    <Position X="113" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIACAIAAAACAAJCAAACAwAgAAAAgAAABAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\SwitchStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.TernaryExpression" Collapsed="true">
+    <Position X="50" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAEAIAgAAAAAQAAAAAAAAAAQAAAAAAAIAAAAIIA=</HashCode>
+      <FileName>src\AST\TernaryExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.ThetaStatement" Collapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAIgAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAACI=</HashCode>
+      <FileName>src\AST\ThetaStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.ThisExpression" Collapsed="true">
+    <Position X="65.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\ThisExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.ThrowStatement" Collapsed="true">
+    <Position X="34.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\ThrowStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.TypeDefinition" Collapsed="true">
+    <Position X="15.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAABgAgAAIAAAAEBAAAAAAAACAAAAQAAAAAAAAAAAQ=</HashCode>
+      <FileName>src\AST\TypeDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST.UnaryExpression" Collapsed="true">
+    <Position X="92.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAIAAEAIAA=</HashCode>
+      <FileName>src\AST\UnaryExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="AST.Parameter" Collapsed="true">
+    <Position X="122.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAARAgAAEQAAAAABAAAAAQAABAAA=</HashCode>
+      <FileName>src\AST\Parameter.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="AST.ArithmeticOperator" Collapsed="true">
+    <Position X="122.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAgAAAAAAABAAQAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>src\AST\ArithmeticExpression.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AST.ArrayOperator" Collapsed="true">
+    <Position X="124" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\ArrayAccessExpression.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AST.AssignmentOperator" Collapsed="true">
+    <Position X="125.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQBAAAIAAAAAAAAgAQQAACAAAgAAQBIAAAAAAA=</HashCode>
+      <FileName>src\AST\AssignmentExpression.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AST.BitwiseOperator" Collapsed="true">
+    <Position X="127.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAACAAAAAAAAAAAAAAAAAAAAACAAABAAAAAAE=</HashCode>
+      <FileName>src\AST\BitwiseExpression.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AST.LogicalOperator" Collapsed="true">
+    <Position X="124" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\LogicalExpression.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AST.RelationalOperator" Collapsed="true">
+    <Position X="125.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAQRAACA=</HashCode>
+      <FileName>src\AST\RelationalExpression.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AST.IdentifierMode" Collapsed="true">
+    <Position X="122.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAQAAAAAAACAA=</HashCode>
+      <FileName>src\AST\SingleIdentifierExpression.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AST.SectionType" Collapsed="true">
+    <Position X="127.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\SwitchLabel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AST.TernaryOperator" Collapsed="true">
+    <Position X="122.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>src\AST\TernaryExpression.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AST.UnaryOperator" Collapsed="true">
+    <Position X="124" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABACAAAABAAAAAAAABACAAAAAAADAAAAAAAQA=</HashCode>
+      <FileName>src\AST\UnaryExpression.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaDynLanguage.Package", "StaDynLanguage.Package\StaDynLanguage.Package.csproj", "{77F065BE-7E7C-4A50-833E-60F0B6C99FB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaDynLanguage.Project", "StaDynLanguage.Project\StaDynLanguage.Project.csproj", "{CC3FFA62-855B-4DCE-B56B-0445F078FEB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaDynBuildTasks", "StaDynBuildTasks\StaDynBuildTasks.csproj", "{D8D693F7-AAF8-4DF4-8BDA-C2B0309F1C04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaDynLanguage Extension", "StaDynLanguage Extension\StaDynLanguage Extension.csproj", "{6DB7C899-2C99-4180-A399-D1244ED17F44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inference", "trunk\Inference\Inference.csproj", "{6AB60528-1ADA-4E5C-8F4E-802F0CA11C3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaDynLanguage", "StaDynLanguage\StaDynLanguage.csproj", "{856CE102-48A3-4DA0-B5AD-2DB2C232D1C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77F065BE-7E7C-4A50-833E-60F0B6C99FB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77F065BE-7E7C-4A50-833E-60F0B6C99FB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77F065BE-7E7C-4A50-833E-60F0B6C99FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77F065BE-7E7C-4A50-833E-60F0B6C99FB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC3FFA62-855B-4DCE-B56B-0445F078FEB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3FFA62-855B-4DCE-B56B-0445F078FEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3FFA62-855B-4DCE-B56B-0445F078FEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3FFA62-855B-4DCE-B56B-0445F078FEB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8D693F7-AAF8-4DF4-8BDA-C2B0309F1C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D693F7-AAF8-4DF4-8BDA-C2B0309F1C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D693F7-AAF8-4DF4-8BDA-C2B0309F1C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D693F7-AAF8-4DF4-8BDA-C2B0309F1C04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DB7C899-2C99-4180-A399-D1244ED17F44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DB7C899-2C99-4180-A399-D1244ED17F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DB7C899-2C99-4180-A399-D1244ED17F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DB7C899-2C99-4180-A399-D1244ED17F44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AB60528-1ADA-4E5C-8F4E-802F0CA11C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AB60528-1ADA-4E5C-8F4E-802F0CA11C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AB60528-1ADA-4E5C-8F4E-802F0CA11C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AB60528-1ADA-4E5C-8F4E-802F0CA11C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{856CE102-48A3-4DA0-B5AD-2DB2C232D1C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{856CE102-48A3-4DA0-B5AD-2DB2C232D1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{856CE102-48A3-4DA0-B5AD-2DB2C232D1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{856CE102-48A3-4DA0-B5AD-2DB2C232D1C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

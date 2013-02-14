@@ -1,0 +1,85 @@
+﻿/* Sample application  to tests tokens */
+
+using System;
+//using Prueba;
+
+namespace Prueba {
+
+class circulo {
+		
+		
+		public int x,y;
+		public int radio;
+		public int suma(int a,int b){
+			return a+b;
+		}
+		public int suma (int a, int b, int c){
+			return a+b+c;
+		}
+		public int resta (int a, int b){
+			return a-b;
+		}
+
+	}
+
+	public class otra {
+		public int a;
+		public rectagulo r;
+		public otra( string b,double d){
+
+		}
+		public circulo getCirculo(){
+			return new circulo();
+		}
+
+
+
+	}
+
+
+
+	class rectagulo {
+		public int x,y;
+		public int ancho,alto;
+
+	}
+	
+	class pruebaFiguras{
+		private void func(int a, int b){
+			a=a+b;
+		}
+		static void Main() {
+			var figura;
+			var res;
+			var abcd;
+			
+			res="hola";
+			abcd=3;
+				
+
+
+			if(true){
+				figura=new circulo();
+			}
+			else{
+				figura=new rectagulo();
+			}
+			figura.ToString();
+			circulo c;
+
+			func(0,4);
+
+			Prueba.otra variable;
+
+
+
+			variable = new otra("yo",3.24);
+
+
+
+			otra o= new otra("hola",3);
+
+
+		}
+	}
+}

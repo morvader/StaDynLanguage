@@ -1,0 +1,119 @@
+﻿using System;
+using System.Text;
+
+using antlr;
+using Parser;
+using AST;
+using System.IO;
+using System.Diagnostics;
+
+using ErrorManagement;
+using Microsoft.VisualStudio.Text;
+using StaDynLanguage.StaDynAST;
+using StaDynLanguage.Errors;
+using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.TextManager.Interop;
+using TypeSystem;
+
+
+namespace StaDynLanguage
+{
+    public class StaDynParser
+    {
+        private ITextBuffer source;
+        private string fileName;
+
+        public StaDynParser(ITextBuffer source, string fileName)
+        {
+            this.source = source;
+            this.fileName = fileName;
+        }
+
+        public StaDynSourceFileAST parseSource()
+        {
+            ErrorManager.Instance.Clear();
+            TypeTable.Instance.Clear();
+
+            # region LexerConfiguration
+            TokenStream lexer;
+
+            Stream s = new MemoryStream(ASCIIEncoding.Default.GetBytes(source.CurrentSnapshot.GetText()));
+            // Create a scanner that reads from the input stream passed to us
+            CSharpLexer antlrLexer = new CSharpLexer(new StreamReader(s));
+
+            // Define a selector that can switch from the C# codelexer to the C# preprocessor lexer
+            TokenStreamSelector selector = new TokenStreamSelector();
+            antlrLexer.Selector = selector;
+            antlrLexer.setFilename(fileName);
+
+            CSharpPreprocessorLexer preproLexer = new CSharpPreprocessorLexer(antlrLexer.getInputState());
+            preproLexer.Selector = selector;
+            CSharpPreprocessorHooverLexer hooverLexer = new CSharpPreprocessorHooverLexer(antlrLexer.getInputState());
+            hooverLexer.Selector = selector;
+
+            // use the special token object class
+            antlrLexer.setTokenCreator(new CustomHiddenStreamToken.CustomHiddenStreamTokenCreator());
+            antlrLexer.setTabSize(1);
+            preproLexer.setTokenCreator(new CustomHiddenStreamToken.CustomHiddenStreamTokenCreator());
+            preproLexer.setTabSize(1);
+            hooverLexer.setTokenCreator(new CustomHiddenStreamToken.CustomHiddenStreamTokenCreator());
+            hooverLexer.setTabSize(1);
+
+            // notify selector about various lexers; name them for convenient reference later
+            selector.addInputStream(antlrLexer, "codeLexer");
+            selector.addInputStream(preproLexer, "directivesLexer");
+            selector.addInputStream(hooverLexer, "hooverLexer");
+            selector.select("codeLexer"); // start with main the CSharp code lexer
+            lexer = selector;
+
+            // create the stream filter; hide WS and SL_COMMENT
+            TokenStreamHiddenTokenFilter filter = new TokenStreamHiddenTokenFilter(lexer);
+            filter.hide(CSharpTokenTypes.WHITESPACE);
+            filter.hide(CSharpTokenTypes.NEWLINE);
+            filter.hide(CSharpTokenTypes.ML_COMMENT);
+            filter.hide(CSharpTokenTypes.SL_COMMENT);
+
+            //------------------------------------------------------------------
+
+            #endregion
+
+            // Create a parser that reads from the scanner
+            CSharpParser parser = new CSharpParser(filter);
+
+            parser.setFilename(fileName);
+
+            StaDynSourceFileAST AstFile = new StaDynSourceFileAST();
+            AstFile.FileName = fileName;
+
+            try
+            {
+                AstFile.Ast = parser.compilationUnit();
+
+            }
+            catch (Exception e)
+            {
+                //Trace.WriteLine(string.Format(CultureInfo.CurrentCulture, "Parser exception", e.Message));
+                Trace.WriteLine("Parser exception " + e.Message);
+                ErrorManager.Instance.NotifyError(new ParserError(new Location(fileName,0,0),e.Message));
+                StaDynErrorList.Instance.addError(ValidationErrorSeverity.Error, ValidationErrorType.Semantic, e.Message, new Span(0,3));
+                //TextSpan t = new TextSpan();
+
+                // t.iStartLine = t.iEndLine = ((antlr.ANTLRException)e).Data. - 1;
+                //t.iStartIndex = ((antlr.RecognitionException)e).getColumn() - 1;
+                //t.iEndIndex = t.iStartIndex + ((antlr.RecognitionException)e).token.getText().Length;
+
+                // //ParserError error = new ParserError(source.GetFilePath(), t.iStartLine, t.iStartIndex, ((antlr.RecognitionException)e).Message);
+                // ErrorAdapter error=new ErrorAdapter(new Location(source.GetFilePath(),0,0));
+
+                // error.Description = e.Message;
+
+                
+                //StaDynErrorList.Instance.addError(TaskCategory.BuildCompile, TaskErrorCategory.Error, e.Message, e.Message, e.Message, 0, 0);
+
+            }
+
+            return AstFile;
+
+        }
+    }
+}

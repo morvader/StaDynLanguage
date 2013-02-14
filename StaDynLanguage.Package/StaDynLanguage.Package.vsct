@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!--  This is the file that defines the actual layout and type of the commands.
+        It is divided in different sections (e.g. command definition, command
+        placement, ...), with each defining a specific set of properties.
+        See the comment before each section for more details about how to
+        use it. -->
+
+  <!--  The VSCT compiler (the tool that translates this file into the binary 
+        format that VisualStudio will consume) has the ability to run a preprocessor 
+        on the vsct file; this preprocessor is (usually) the C++ preprocessor, so 
+        it is possible to define includes and macros with the same syntax used 
+        in C++ files. Using this ability of the compiler here, we include some files 
+        defining some of the constants that we will use inside the file. -->
+
+  <!--This is the file that defines the IDs for all the commands exposed by VisualStudio. -->
+  <Extern href="stdidcmd.h"/>
+
+  <!--This header contains the command ids for the menus provided by the shell. -->
+  <Extern href="vsshlids.h"/>
+
+  <!--Definition of some VSCT specific constants. In this sample we use it for the IDs inside the guidOfficeIcon group. -->
+  <Extern href="msobtnid.h"/>
+
+
+
+
+  <!--The Commands section is where we the commands, menus and menu groups are defined.
+      This section uses a Guid to identify the package that provides the command defined inside it. -->
+  <Commands package="guidStaDynLanguage_PackagePkg">
+    <!-- Inside this section we have different sub-sections: one for the menus, another  
+    for the menu groups, one for the buttons (the actual commands), one for the combos 
+    and the last one for the bitmaps used. Each element is identified by a command id that  
+    is a unique pair of guid and numeric identifier; the guid part of the identifier is usually  
+    called "command set" and is used to group different command inside a logically related  
+    group; your package should define its own command set in order to avoid collisions  
+    with command ids defined by other packages. -->
+
+    
+    <!-- In this section you can define new menu groups. A menu group is a container for 
+         other menus or buttons (commands); from a visual point of view you can see the 
+         group as the part of a menu contained between two lines. The parent of a group 
+         must be a menu. -->
+ 
+    <Menus>
+      <Menu guid="guidStaDynLanguage_PackageCmdSet" id="StaDynMenu" priority="0xFFFF" type="Menu">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
+        <Strings>
+          <ButtonText>StaDyn</ButtonText>
+          <CommandName>&amp;StaDynMenu</CommandName>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <!-- In this section you can define new menu groups. A menu group is a container for 
+         other menus or buttons (commands); from a visual point of view you can see the 
+         group as the part of a menu contained between two lines. The parent of a group 
+         must be a menu. -->
+    <Groups>
+      <Group guid="guidStaDynLanguage_PackageCmdSet" id="VarOperationsMenuGroup">
+        <!-- Parent: See CommandPlacements -->
+      </Group>
+      <Group guid="guidStaDynLanguage_PackageCmdSet" id="SpecialBuildMenuGroup">
+        <!-- Parent: See CommandPlacements -->
+      </Group>
+    </Groups>
+
+    <!--Buttons section. -->
+    <!--This section defines the elements the user can interact with, like a menu command or a button 
+        or combo box in a toolbar. -->
+    <Buttons>
+      <!--To define a menu group you have to specify its ID, the parent menu and its display priority. 
+          Some commands are not defined as shared, so they use our package CLSID as the command set GUID. 
+          Also, by specifying blank for the FLAGS, the command is default visible and enabled. Other valid 
+          values for FLAGS are the following: DEFAULTDISABLED, DEFAULTINVISIBLE, DYNAMICVISIBILITY, TEXTCHANGES 
+          
+          These values for FLAGS can be or'ed together, e.g. "DEFAULTINVISIBLE | DYNAMICVISIBILITY" 
+          If you do not want an image next to your command, set the image to "guidOfficeIcon:msotcidNoIcon" -->
+      <Button guid="guidStaDynLanguage_PackageCmdSet" id="cmdidMakeVarStatic" priority="0x0010" type="Button">
+        <Parent guid="guidStaDynLanguage_PackageCmdSet" id="VarOperationsMenuGroup" />
+        <Icon guid="guidImages" id="sta" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <CommandName>cmdidMakeVarStatic</CommandName>
+          <ButtonText>Make var &amp;static</ButtonText>
+        </Strings>
+
+      </Button>
+      <Button guid="guidStaDynLanguage_PackageCmdSet" id="cmdidMakeVarDynamic" priority="0x0011" type="Button">
+        <Parent guid="guidStaDynLanguage_PackageCmdSet" id="VarOperationsMenuGroup" />
+        <Icon guid="guidImages" id="dyn" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <CommandName>cmdidMakeVarDynamic</CommandName>
+          <ButtonText>Make var &amp;dynamic</ButtonText>
+        </Strings>
+
+      </Button>
+
+      <Button guid="guidStaDynLanguage_PackageCmdSet" id="cmdidMakeEverythingStatic" priority="0x0020" type="Button">
+        <Parent guid="guidStaDynLanguage_PackageCmdSet" id="VarOperationsMenuGroup" />
+        <Icon guid="guidImages" id="strongSta" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <CommandName>cmdidMakeEverythingStatic</CommandName>
+          <ButtonText>Make everything s&amp;tatic</ButtonText>
+        </Strings>
+
+      </Button>
+      <Button guid="guidStaDynLanguage_PackageCmdSet" id="cmdidMakeEverythingDynamic" priority="0x0021" type="Button">
+        <Parent guid="guidStaDynLanguage_PackageCmdSet" id="VarOperationsMenuGroup" />
+        <Icon guid="guidImages" id="strongDyn" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <CommandName>cmdidMakeEverythingDynamic</CommandName>
+          <ButtonText>Make everything d&amp;ynamic</ButtonText>
+        </Strings>
+
+      </Button>
+
+      <Button guid="guidStaDynLanguage_PackageCmdSet" id="cmdidDeclareExplicit" priority="0x0030" type="Button">
+        <Parent guid="guidStaDynLanguage_PackageCmdSet" id="VarOperationsMenuGroup" />
+        <Icon guid="guidImages" id="exp" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <CommandName>cmdidDeclareExplicit</CommandName>
+          <ButtonText>Declare &amp;explicit</ButtonText>
+        </Strings>
+
+      </Button>
+
+      <Button guid="guidStaDynLanguage_PackageCmdSet" id="cmdidDeclareEverythingExplicit" priority="0x0031" type="Button">
+        <Parent guid="guidStaDynLanguage_PackageCmdSet" id="VarOperationsMenuGroup" />
+        <Icon guid="guidImages" id="strongExp" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <CommandName>cmdidDeclareEverythingExplicit</CommandName>
+          <ButtonText>Declare everything e&amp;xplicit</ButtonText>
+        </Strings>
+
+      </Button>
+
+      <Button guid="guidStaDynLanguage_PackageCmdSet" id="cmdidBuildEverythingStatic" priority="0x0010" type="Button">
+        <Parent guid="guidStaDynLanguage_PackageCmdSet" id="SpecialBuildMenuGroup" />
+        <Icon guid="guidImages" id="staBuild" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <CommandName>cmdidBuildEverythingStatic</CommandName>
+          <ButtonText>Build with everything st&amp;atic</ButtonText>
+        </Strings>
+
+      </Button>
+      <Button guid="guidStaDynLanguage_PackageCmdSet" id="cmdidBuildEverythingDynamic" priority="0x0011" type="Button">
+        <Parent guid="guidStaDynLanguage_PackageCmdSet" id="SpecialBuildMenuGroup" />
+        <Icon guid="guidImages" id="dynBuild" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <CommandName>cmdidBuildEverythingDynamic</CommandName>
+          <ButtonText>Build with everything dy&amp;namic</ButtonText>
+        </Strings>
+      </Button>
+      
+      <Button guid="guidStaDynLanguage_PackageCmdSet" id="cmdidBuildManaged" priority="0x0011" type="Button">
+        <Parent guid="guidStaDynLanguage_PackageCmdSet" id="SpecialBuildMenuGroup" />
+        <Icon guid="guidImages" id="manageBuild" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <CommandName>cmdidBuildManaged</CommandName>
+          <ButtonText>Build managed dy&amp;namism</ButtonText>
+        </Strings>
+      </Button>
+
+    </Buttons>
+
+    <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
+    <Bitmaps>
+      <!--  The bitmap id is defined in a way that is a little bit different from the others: 
+            the declaration starts with a guid for the bitmap strip, then there is the resource id of the 
+            bitmap strip containing the bitmaps and then there are the numeric ids of the elements used 
+            inside a button definition. An important aspect of this declaration is that the element id 
+            must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
+      <Bitmap guid="guidImages" href="Resources\icons.png"
+              usedList="sta, dyn, strongSta, strongDyn, exp, strongExp, staBuild, dynBuild,manageBuild"/>
+    </Bitmaps>
+  </Commands>
+
+  <CommandPlacements>
+    <CommandPlacement guid="guidStaDynLanguage_PackageCmdSet" id="VarOperationsMenuGroup" priority="0x0001" >
+      <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+    </CommandPlacement>
+    <CommandPlacement guid="guidStaDynLanguage_PackageCmdSet" id="VarOperationsMenuGroup" priority="0x0020" >
+      <Parent guid="guidStaDynLanguage_PackageCmdSet" id="StaDynMenu" />
+    </CommandPlacement>
+    <CommandPlacement guid="guidStaDynLanguage_PackageCmdSet" id="SpecialBuildMenuGroup" priority="0x0010" >
+      <Parent guid="guidStaDynLanguage_PackageCmdSet" id="StaDynMenu" />
+    </CommandPlacement>
+  </CommandPlacements>
+
+  <Symbols>
+    <!-- This is the package guid. -->
+    <GuidSymbol name="guidStaDynLanguage_PackagePkg" value="{80de0503-7f18-4393-9623-70fa01e2e130}" />
+    
+    <!-- This is the guid used to group the menu commands together -->
+    <GuidSymbol name="guidStaDynLanguage_PackageCmdSet" value="{C5CF6E8A-97A7-4FC4-B9B8-63F183DCF0BA}">
+      <IDSymbol name="StaDynMenu" value="0x1000"/>
+
+      <IDSymbol name="VarOperationsMenuGroup" value="0x1100" />
+      <IDSymbol name="SpecialBuildMenuGroup" value="0x1101" />
+
+      <IDSymbol name="cmdidMakeVarStatic" value="0x101" />
+      <IDSymbol name="cmdidMakeVarDynamic" value="0x102" />
+
+      <IDSymbol name="cmdidMakeEverythingStatic" value="0x110" />
+      <IDSymbol name="cmdidMakeEverythingDynamic" value="0x111" />
+
+      <IDSymbol name="cmdidBuildEverythingStatic" value="0x120" />
+      <IDSymbol name="cmdidBuildEverythingDynamic" value="0x121" />
+
+      <IDSymbol name="cmdidDeclareExplicit" value="0x130" />
+      <IDSymbol name="cmdidDeclareEverythingExplicit" value="0x131" />
+
+      <IDSymbol name="cmdidBuildManaged" value="0x132" />
+    </GuidSymbol>
+    
+    
+    
+    <GuidSymbol name="guidImages" value="{16013b08-ed1a-4b57-98e6-f6d388afa546}" >
+      <IDSymbol name="sta" value="1" />
+      <IDSymbol name="dyn" value="2" />
+      <IDSymbol name="strongSta" value="3" />
+      <IDSymbol name="strongDyn" value="4" />
+      <IDSymbol name="exp" value="5" />
+      <IDSymbol name="strongExp" value="6" />
+      <IDSymbol name="staBuild" value="7" />
+      <IDSymbol name="dynBuild" value="8" />
+      <IDSymbol name="manageBuild" value="9" />
+    </GuidSymbol>
+  </Symbols>
+
+</CommandTable>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<VSTemplate Type="Project" Version="2.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>StaDyn Project</Name>
+    <DefaultName>Project</DefaultName>
+    <Description>Basic StaDyn project.</Description>
+    <Icon>StaDyn.ico</Icon>
+    <ProjectType>StaDyn</ProjectType>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="StaDyn.sdproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Program.stadyn</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

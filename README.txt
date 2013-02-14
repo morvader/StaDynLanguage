@@ -1,4 +1,19 @@
-Proyecto fin de carrera de Francisco Moreno Sanz
+Final Degree Project by Francisco Moreno Sanz
+
+An extension of Visual Studio 2010 (vsix) that supports create, compile and execute StaDyn language projects.
+
+Main features:
+
+- Syntax highlighting
+- Word completion
+- Object member list
+- Expression Quick info
+- Overriden methond list
+- Allows marking and unmarking dynamic references, synchronizing the XML file that describes their dynamism.
+- Different compile modes: everythign static, everything dinamic, managed mode (hybrid)
+
+
+More info: http://www.reflection.uniovi.es/stadyn/
 
 
 License

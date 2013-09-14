@@ -1,0 +1,21 @@
+﻿using System;
+
+public class Program {
+
+	public static void Main() {
+		Node node = new Node(true, 0);
+		List aList = new List(node);
+		// Demo: hint of n + declare explicit
+		bool b1 = aList.firstNode().getData();
+		node.setData(1);
+		// Demo: hint of n + declare explicit
+		var b2 = aList.firstNode().getData(); 
+
+		b2="StaDyn";
+
+
+	} 
+
+}
+
+  

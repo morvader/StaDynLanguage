@@ -1,0 +1,22 @@
+﻿
+
+public class Node {
+
+  private var data;
+
+  private var next;
+
+  public Node(var data, var next) {
+    this.data = data;
+    this.next = next;
+  }
+
+  public var getData() { 
+    return data; 
+  }
+
+  public void setData(var data) { 
+    this.data=data; 
+  }
+
+}

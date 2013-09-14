@@ -1,0 +1,12 @@
+﻿using System;
+
+class Rectangle {
+    public var x, y, width, height;
+    public Rectangle() {
+        x = Random.Next(-20, 20);
+        y = Random.Next(-20, 20);
+        width = Random.Next(0, 10);
+        height = Random.Next(0, 10);
+    }
+}
+

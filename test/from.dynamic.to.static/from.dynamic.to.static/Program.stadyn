@@ -1,0 +1,23 @@
+﻿
+using System;
+
+class Program {
+
+    public static int Main() {
+        var figure;
+		var randomValue;
+		randomValue = Random.Next(1, 3);
+		switch(randomValue) {
+			case 1: figure = new Circumference(); break;
+			case 2: figure = new Rectangle();  break;
+			default: figure = new Triangle();
+		}
+		int xCoordinate = figure.x;
+		// Demo: 
+		// Change to everything dynamic and see the change of icon: Prototypes
+		// Change to everything static and see the error: Final application
+		// Change to managed dynamism and make "figure" dynamic: Hybrid approach
+    }
+
+}
+  

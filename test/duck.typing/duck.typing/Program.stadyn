@@ -1,0 +1,22 @@
+﻿
+using System;
+
+class Program {
+
+    public static int Main() {
+        var figure;
+		if (Random.Next()<0.5)
+			figure = new Circumference();
+		else
+			figure = new Rectangle(); 
+		// figure: Cirumference \/ Rectangle 
+		// Demo: Show IntelliSense here
+ 		int xCoordinate = figure.x;
+		
+		figure = new Circumference();
+		// Demo: Show IntelliSense here
+		int radiusValue = figure.radius;
+    }
+
+}
+ 

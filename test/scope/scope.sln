@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{471EC4BB-E47E-4229-A789-D1F5F83B52D4}") = "scope", "scope\scope.sdproj", "{F0BF0BCB-69F5-41A0-8092-7E9BA1A9D390}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0BF0BCB-69F5-41A0-8092-7E9BA1A9D390}.Debug|x86.ActiveCfg = Debug|x86
+		{F0BF0BCB-69F5-41A0-8092-7E9BA1A9D390}.Debug|x86.Build.0 = Debug|x86
+		{F0BF0BCB-69F5-41A0-8092-7E9BA1A9D390}.Release|x86.ActiveCfg = Release|x86
+		{F0BF0BCB-69F5-41A0-8092-7E9BA1A9D390}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

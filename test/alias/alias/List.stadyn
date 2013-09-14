@@ -1,0 +1,13 @@
+﻿public class List {
+
+  private var head;
+
+  public List(Node node) {
+    this.head = node;
+  }
+
+  public var firstNode() {
+	return this.head;
+  }
+
+} 

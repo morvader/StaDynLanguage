@@ -1,0 +1,26 @@
+﻿
+using System;
+
+class Test {
+
+  public static void Main() {
+    Console.Write("Enter a number, please: ");
+    var number = Console.In.ReadLine();
+	
+	
+    Console.WriteLine("Number of digits: {0}.", number.Length);
+
+    number = Math.Pow(Convert.ToInt32(number), 2);
+	
+    Console.WriteLine("The square is {0}.", number);
+	
+
+    //int digits = number.Length; // Compiler error
+
+	// 1) Compiler error
+	// 2) IntelliSense in both places
+
+	 Console.In.ReadLine();
+  }
+
+}

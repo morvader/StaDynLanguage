@@ -1,0 +1,8 @@
+<application name="Program">
+  <namespace name="">
+    <class name="Program">
+      <method name="Main">
+      </method>
+    </class>
+  </namespace>
+</application>

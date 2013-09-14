@@ -1,0 +1,11 @@
+﻿using System;
+
+class Circumference {
+    public var x, y, radius;
+    public Circumference() {
+        x = Random.Next(-20, 20);
+        y = Random.Next(-20, 20);
+        radius = Random.Next(0, 10);
+    }
+}
+

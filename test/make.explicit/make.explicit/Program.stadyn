@@ -1,0 +1,15 @@
+﻿using System;
+
+class Program {
+
+	public static void Main() {
+		var first;
+		var second;
+		var wrapped = new Wrapper("StaDyn");
+		var wrapper = new Wrapper(wrapped);
+		first = wrapper.get().get();
+		wrapped.set(new Exception());
+		second = wrapper.get().get();
+	}
+}
+ 

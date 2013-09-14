@@ -1,0 +1,8 @@
+<application name="Class1">
+  <namespace name="scope">
+    <class name="Spam">
+      <method name="method">
+      </method>
+    </class>
+  </namespace>
+</application>

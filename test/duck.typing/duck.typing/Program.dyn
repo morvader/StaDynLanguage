@@ -1,0 +1,29 @@
+<application name="Program">
+  <namespace name="PruebaStaDynIDE">
+    <class name="Program">
+      <method name="PruebaStaDynIDE.Program.Main">
+        <dynvar name="a" />
+      </method>
+      <method name="PruebaStaDynIDE.Program.f">
+        <dynvar name="a" />
+        <dynvar name="obj" />
+      </method>
+    </class>
+  </namespace>
+  <class name="Program">
+    <method name="Program.g">
+      <dynvar name="randomValue" />
+      <dynvar name="figure" />
+    </method>
+  </class>
+  <dynvar name="figure" />
+  <namespace name="">
+    <class name="Program">
+      <method name="g">
+        <dynvar name="figure" />
+      </method>
+      <method name="Main">
+      </method>
+    </class>
+  </namespace>
+</application>

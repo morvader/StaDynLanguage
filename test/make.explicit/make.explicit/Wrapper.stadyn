@@ -1,0 +1,17 @@
+﻿class Wrapper {
+
+	private var attribute;
+
+	public Wrapper(var attribute) {
+		this.attribute = attribute;
+	}
+
+	public var get() {
+		return attribute;
+	}
+
+	public void set(var attribute) {
+		this.attribute = attribute;
+	}
+}
+

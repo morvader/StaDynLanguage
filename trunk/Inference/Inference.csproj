@@ -65,12 +65,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="antlr.astframe, Version=2.7.7.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Tests\bin\Debug\antlr.astframe.dll</HintPath>
+      <HintPath>..\..\libs\antlr.astframe.dll</HintPath>
     </Reference>
-    <Reference Include="antlr.runtime, Version=2.7.7.1, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="antlr.runtime, Version=2.7.7.1, Culture=neutral, PublicKeyToken=83d1bbde98ad1e0b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Tests\bin\Debug\antlr.runtime.dll</HintPath>
+      <HintPath>..\..\libs\antlr.runtime.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
